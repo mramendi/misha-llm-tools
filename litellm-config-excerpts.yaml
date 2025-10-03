@@ -1,0 +1,43 @@
+model_list:
+  - model_name: Qwen3 235B A22B Thinking 2507
+    litellm_params:
+      model: openai/Qwen/Qwen3-235B-A22B-Thinking-2507
+      api_base: https://nano-gpt.com/api/v1
+      api_key: os.environ/NANO_GPT_API_KEY
+      extra_body:
+        reasoning:
+          enabled: true
+          max_reasoning_tokens: 800
+
+ - model_name: gemini-2.5-flash-search
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY_FREE
+      web_search_options:
+        search_context_size: "medium"
+      safety_settings:
+        - category: HARM_CATEGORY_HARASSMENT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_HATE_SPEECH
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_DANGEROUS_CONTENT
+          threshold: BLOCK_NONE
+
+
+  - model_name: gemini-2.5-flash-lite-search
+    litellm_params:
+      model: gemini/gemini-2.5-flash-lite
+      api_key: os.environ/GEMINI_API_KEY_FREE
+      web_search_options:
+        search_context_size: "medium"
+      safety_settings:
+        - category: HARM_CATEGORY_HARASSMENT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_HATE_SPEECH
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_SEXUALLY_EXPLICIT
+          threshold: BLOCK_NONE
+        - category: HARM_CATEGORY_DANGEROUS_CONTENT
+          threshold: BLOCK_NONE
