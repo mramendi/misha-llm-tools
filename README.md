@@ -1,4 +1,4 @@
-So here's a three-step search, which works in OpenWebUI but is a bit overfit to my setup. PRs welcone to make this more universal.
+So here's a three-step search, which works in OpenWebUI but is a bit overfit to my setup. PRs welcome to make this more universal.
 
 Two of the tools use the same scraper and also some libraries are required. I sorted this by creatind /app/backend/data/site-packages (on mounted storage as part of /app/backend/data), setting PYTHONPATH to this directory, installing stuff into it - by running pip **within the container** (`podman exec -ti container-name bash`). BTW this is what I installed, note verion of playwright-stealth needed to not disrupt OWUI's plder Playwright library:
 
