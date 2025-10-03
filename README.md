@@ -8,5 +8,5 @@ pip install --target /app/backend/data/site-packages playwright-stealth==1.0.5 m
 
 And then I dropped smart_scrape.py into that same directory, which is on PYTHONPATH so the tools can import it.
 
-My setup uses a local LiteLLM proxy which is why in the search tool I can use the openai library to call to the search-enabled Gemini Flash models. An excerpt of the LiteLLM proxy config is provided. The bug advantage is that Gemini has a generous free tier (500 searches a day! That is, you get 1000 RPD Gemini 2,5 Flash Lite, 250 RPD Gemini Flash, but inly 500 tootal with Web "grounding". Flash Lite fails much of the time so I fall back to Flash while still trying to use the generous Flash Lite allowance first.
+My setup uses a local LiteLLM proxy which is why in the search tool I can use the openai library to call to the search-enabled Gemini Flash models. An excerpt of the LiteLLM proxy config is provided. The big advantage is that Gemini has a generous free tier - 500 searches a day! That is, you get 1000 RPD Gemini 2,5 Flash Lite, 250 RPD Gemini Flash, but inly 500 tootal with Web "grounding". Flash Lite fails much of the time so I fall back to Flash while still trying to use the generous Flash Lite allowance first.
 
