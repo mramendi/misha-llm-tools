@@ -10,3 +10,5 @@ And then I dropped smart_scrape.py into that same directory, which is on PYTHONP
 
 My setup uses a local LiteLLM proxy which is why in the search tool I can use the openai library to call to the search-enabled Gemini Flash models. An excerpt of the LiteLLM proxy config is provided. The big advantage is that Gemini has a generous free tier - 500 searches a day! That is, you get 1000 RPD Gemini 2.5 Flash Lite, 250 RPD Gemini 2.5 Flash, but only 500 total with Web "grounding". Flash Lite fails much of the time so I fall back to Flash while still trying to use the generous Flash Lite allowance first.
 
+P.S. I get my open-source models on nearly-all-you-can-eat for $8/mo from nano-gpt.com . If you want to join them, please use my invite link https://nano-gpt.com/invite/bwiPPb7M for a 5% discount on web usage  (which, if you subscribe, won't be much, as you will mostly use models you get with the subscription).
+
